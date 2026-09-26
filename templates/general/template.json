@@ -1,0 +1,15 @@
+{
+  "$schema": "../../schemas/template.schema.json",
+  "schemaVersion": 1,
+  "name": "general",
+  "files": [
+    { "path": ".editorconfig" },
+    { "path": ".gitignore" },
+    { "path": "AGENTS.md" },
+    { "path": "README.md" },
+    { "path": "docs/PRD.md" },
+    { "path": "docs/TRD.md" },
+    { "path": "docs/ARCHITECTURE.md" },
+    { "path": "docs/TASKS.md" }
+  ]
+}
