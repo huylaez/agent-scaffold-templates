@@ -1,39 +1,69 @@
-# Product Requirements Document
+# Product Requirements Document — {{PROJECT_NAME}}
 
-## Summary
+**Version:** 0.1 (draft)
+**Owner:** <name or team>
+**Status:** Draft
 
-Describe the product in one paragraph, including the problem it solves and the intended outcome.
+## 1. Problem
 
-## Users
+Describe the user problem, its context, and why solving it matters. Include evidence or constraints that materially affect the product.
 
-Define the primary users, their context, and their most important needs.
+## 2. Goals and non-goals
 
-## Goals
+### Goals
 
-- Add measurable product goals.
+- Define measurable outcomes for the current product version.
 
-## Non-goals
+### Non-goals
 
-- State what this project will not solve.
+- State explicitly what this version will not solve.
 
-## User journeys
+## 3. Users
 
-Describe the critical paths a user must be able to complete.
+| Persona | Primary need | Usage context |
+| --- | --- | --- |
+| <persona> | <need> | <context or frequency> |
 
-## Requirements
+## 4. Core user flows
 
-### Functional
+Describe each critical path from the user's starting point to a visible outcome. Call out the most important product constraint before listing features.
 
-- Add observable product behavior.
+```text
+<start> -> <step> -> <step> -> <outcome>
+```
 
-### Quality
+## 5. Product requirements
 
-- Add expectations for reliability, usability, accessibility, and performance.
+### F1 — <Capability>
 
-## Acceptance criteria
+- Describe observable behavior, not implementation.
+- Include error, empty, loading, recovery, and offline behavior when relevant.
+- **Acceptance:** define a testable outcome.
 
-- [ ] Add specific, testable criteria.
+Add one section per capability and keep identifiers stable so technical documents and plans can reference them.
 
-## Open questions
+## 6. Success metrics
 
-- Record unresolved product decisions and their owners.
+| Metric | Target | Measurement method |
+| --- | --- | --- |
+| <metric> | <target> | <how and where it is measured> |
+
+## 7. Risks and constraints
+
+1. **<Risk or constraint>.** Describe the impact, evidence, and mitigation or product fallback.
+
+## 8. Ownership
+
+| Area | Owner | Supporting |
+| --- | --- | --- |
+| <area> | <owner> | <team or person> |
+
+## 9. Milestones
+
+Define outcome-based milestones with entry criteria and a verifiable completion condition. Do not use this section as the implementation task tracker.
+
+## 10. Open questions
+
+| Question | Owner | Needed by | Resolution |
+| --- | --- | --- | --- |
+| <question> | <owner> | <date or milestone> | Open |

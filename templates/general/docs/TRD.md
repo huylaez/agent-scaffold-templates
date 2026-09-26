@@ -1,39 +1,73 @@
-# Technical Requirements Document
+# Technical Requirements Document — {{PROJECT_NAME}}
 
-## Context
+**Version:** 0.1 (draft)
+**Companion to:** `PRD.md`, `api-contract.md`
 
-Summarize the technical problem, constraints, and relevant existing systems.
+## 1. System architecture
 
-## Requirements
+Describe the system boundary and include a compact diagram of users, components, data stores, and external systems. State the most important boundary rules explicitly.
 
-### Functional
+```text
+<client> -> <application> -> <data store>
+                   |
+                   +-> <external system>
+```
 
-- Translate product requirements into system behavior.
+## 2. Platform and technology decisions
 
-### Non-functional
+List the selected runtimes, frameworks, persistence systems, deployment targets, and version constraints. Explain constraints that future changes must preserve.
 
-- Define targets for availability, latency, security, privacy, and cost.
+## 3. Components and ownership
 
-## Interfaces
+For each component or domain, document:
 
-Document external APIs, events, files, commands, and user-facing contracts.
+- responsibility and code location;
+- inputs, outputs, and owned data;
+- allowed dependencies and forbidden coupling;
+- failure behavior and operational owner.
 
-## Data
+Shared code must contain only cross-cutting technical concerns. External providers belong behind explicit adapters.
 
-Describe data models, ownership, retention, migration, and backup requirements.
+## 4. Data model and lifecycle
 
-## Security
+Document entities, ownership, invariants, indexes, retention, deletion, backup, and recovery. Schema changes require forward migrations; never rewrite a migration that may already have been applied.
 
-List trust boundaries, sensitive data, authentication, authorization, and abuse cases.
+## 5. Interfaces and workflows
 
-## Operations
+Summarize the important request, event, job, and file flows. Put exact external schemas and status or error behavior in `api-contract.md`, then link to them here.
 
-Describe deployment, observability, alerts, rollback, and incident response.
+## 6. Non-functional requirements
 
-## Verification
+| Area | Requirement | Verification |
+| --- | --- | --- |
+| Performance | <target and percentile> | <load test or metric> |
+| Reliability | <availability or recovery target> | <test or alert> |
+| Security | <control> | <review or automated check> |
+| Privacy | <retention or access constraint> | <audit or test> |
+| Cost | <budget or scaling guardrail> | <report or alert> |
 
-Map each important requirement to a test, check, or measurable signal.
+## 7. Security and trust boundaries
 
-## Open questions
+Describe authentication, authorization, sensitive data, input validation, secrets, abuse cases, dependency risks, and which components are trusted with each class of data.
 
-- Record unresolved technical decisions and their owners.
+## 8. Operations and observability
+
+Define environments, configuration ownership, structured logs, metrics, traces, alerts, deployment, rollback, migrations, backups, and incident recovery. Put executable procedures in `operations/`.
+
+## 9. Testing and quality gates
+
+List required unit, integration, contract, end-to-end, migration, security, and performance checks. Keep the exact handoff commands in the root `README.md`.
+
+The definition of done for a behavior change is:
+
+- implementation and migration are complete;
+- regression coverage exists at the appropriate boundary;
+- source-of-truth contracts and affected guides agree with the code;
+- required quality gates pass;
+- the behavior is verified in the environment required by the PRD.
+
+## 10. Decisions still needed
+
+| Decision | Owner | Needed by | Status |
+| --- | --- | --- | --- |
+| <decision> | <owner> | <date or milestone> | Open |

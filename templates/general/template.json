@@ -6,10 +6,20 @@
     { "path": ".editorconfig" },
     { "path": ".gitignore" },
     { "path": "AGENTS.md" },
+    { "path": "CLAUDE.md", "source": "AGENTS.md" },
     { "path": "README.md" },
+    { "path": "docs/README.md" },
     { "path": "docs/PRD.md" },
     { "path": "docs/TRD.md" },
-    { "path": "docs/ARCHITECTURE.md" },
-    { "path": "docs/TASKS.md" }
+    { "path": "docs/api-contract.md" },
+    { "path": "docs/api/README.md" },
+    { "path": "docs/api/.api-template.md" },
+    { "path": "docs/adr/README.md" },
+    { "path": "docs/adr/.adr-template.md" },
+    { "path": "docs/architecture/README.md" },
+    { "path": "docs/integration/README.md" },
+    { "path": "docs/operations/README.md" },
+    { "path": "docs/plans/README.md" },
+    { "path": "docs/plans/.plan-template.md" }
   ]
 }
