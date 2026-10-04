@@ -1,0 +1,29 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+*.log
+
+# Engine-generated caches and local state
+.godot/
+.vs/
+.vscode/
+Library/
+Logs/
+Obj/
+Temp/
+UserSettings/
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Exported builds and crash artifacts
+exports/
+releases/
+crash-reports/

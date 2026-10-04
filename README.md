@@ -11,12 +11,22 @@ This repository stores versioned project templates consumed by the [`agent-scaff
 │   ├── template.schema.json
 │   └── templates.schema.json
 └── templates/
-    └── general/
+    ├── general/
+    │   ├── template.json
+    │   ├── AGENTS.md
+    │   ├── README.md
+    │   └── docs/
+    └── game/
         ├── template.json
         ├── AGENTS.md
         ├── README.md
         └── docs/
 ```
+
+## Available templates
+
+- `general`: a general-purpose, documentation-first agent project.
+- `game`: an engine-agnostic game project with gameplay, content, playtest, performance, save compatibility, and release guidance.
 
 `templates.json` is the public index. Each entry points to a template manifest. A manifest lists every file the CLI may download; unlisted files are never scaffolded.
 

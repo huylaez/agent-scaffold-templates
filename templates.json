@@ -6,6 +6,11 @@
       "name": "general",
       "description": "A general-purpose, documentation-first agent project",
       "manifest": "templates/general/template.json"
+    },
+    {
+      "name": "game",
+      "description": "An engine-agnostic, documentation-first game project",
+      "manifest": "templates/game/template.json"
     }
   ]
 }

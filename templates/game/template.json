@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/template.schema.json",
+  "schemaVersion": 1,
+  "name": "game",
+  "files": [
+    { "path": ".editorconfig" },
+    { "path": ".gitignore" },
+    { "path": "AGENTS.md" },
+    { "path": "CLAUDE.md", "source": "AGENTS.md" },
+    { "path": "README.md" },
+    { "path": "docs/README.md" },
+    { "path": "docs/GDD.md" },
+    { "path": "docs/TRD.md" },
+    { "path": "docs/data-contracts.md" },
+    { "path": "docs/gameplay/README.md" },
+    { "path": "docs/gameplay/.system-template.md" },
+    { "path": "docs/content/README.md" },
+    { "path": "docs/testing/README.md" },
+    { "path": "docs/testing/.playtest-template.md" },
+    { "path": "docs/architecture/README.md" },
+    { "path": "docs/operations/README.md" },
+    { "path": "docs/adr/README.md" },
+    { "path": "docs/adr/.adr-template.md" },
+    { "path": "docs/plans/README.md" },
+    { "path": "docs/plans/.plan-template.md" }
+  ]
+}
